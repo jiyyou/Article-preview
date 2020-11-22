@@ -36,6 +36,7 @@ main {
 	border-radius: 10px;
 	overflow: hidden;
 	width: 100%;
+	max-width: 630px;
 	@include desktop {
 		width: 800px;
 		height: 300px;
@@ -51,8 +52,7 @@ main {
 			height: 100%;
 		}
 	}
-	&__content {
-	
+	&__content {	
 		background-color: white;
 	}
 	&__textbox {
@@ -62,7 +62,7 @@ main {
 
 	}
 	&__description {
-
+		margin-top: 1rem;
 	}
 	&__footer {
 		background-color: white;
@@ -90,6 +90,7 @@ main {
 	&__avatar {
 		border-radius: 100%;
 		width: 40px;
+		margin-right: 1rem;
 	}
 	&__user {
 

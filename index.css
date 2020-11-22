@@ -28,6 +28,7 @@ main {
   border-radius: 10px;
   overflow: hidden;
   width: 100%;
+  max-width: 630px;
 }
 @media (min-width: 1440px) {
   .card {
@@ -53,6 +54,9 @@ main {
 }
 .card__textbox {
   padding: 2rem;
+}
+.card__description {
+  margin-top: 1rem;
 }
 .card__footer {
   background-color: white;
@@ -84,6 +88,7 @@ main {
 .card__avatar {
   border-radius: 100%;
   width: 40px;
+  margin-right: 1rem;
 }
 .card__sharebox {
   display: none;
