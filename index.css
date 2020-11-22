@@ -20,6 +20,8 @@ img {
 main {
   background-color: #ecf2f8;
   padding: 4rem 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
@@ -27,19 +29,35 @@ main {
   overflow: hidden;
   width: 100%;
 }
+@media (min-width: 1440px) {
+  .card {
+    width: 800px;
+    height: 300px;
+    display: flex;
+    overflow: visible;
+  }
+}
 .card__banner {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
+@media (min-width: 1440px) {
+  .card__banner {
+    width: 300px;
+    height: 100%;
+  }
+}
 .card__content {
-  padding: 2rem;
   background-color: white;
+}
+.card__textbox {
+  padding: 2rem;
 }
 .card__footer {
   background-color: white;
-  padding: 2rem;
   display: flex;
+  padding: 1rem 2rem;
   position: relative;
   justify-content: space-between;
 }
@@ -78,6 +96,14 @@ main {
 @media (min-width: 1440px) {
   .card__sharebox--active {
     position: absolute;
+    background-color: #48556a;
+    width: 250px;
+    height: 80px;
+    padding: 0 1rem;
+    justify-content: space-around;
+    border-radius: 10px;
+    right: -66px;
+    bottom: 64px;
   }
 }
 .card__sharetext {
