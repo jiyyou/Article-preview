@@ -1,3 +1,8 @@
+$darkestblue: hsl(217, 19%, 35%);
+$darkblue: hsl(214, 17%, 51%);
+$blue: hsl(212, 23%, 69%);
+$lightblue: hsl(210, 46%, 95%);
+
 * {
 	list-style-type: none;
 	text-decoration: none;
@@ -16,8 +21,8 @@ img {
 }
 
 main {
-	background-color: hsl(210, 46%, 95%);
-	padding: 4rem 1rem;
+	background-color: $lightblue;
+	padding: 4rem 1.5rem;
 }
 .card {
 	border-radius: 10px;
@@ -25,9 +30,61 @@ main {
 	width: 100%;
 	&__banner {
 		width: 100%;
+		height: 180px;
+		object-fit: cover;
 	}
 	&__content {
 		padding: 2rem;
 		background-color: white;
+	}
+	&__title {
+
+	}
+	&__description {
+
+	}
+	&__footer {
+		background-color: white;
+		padding: 2rem;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__userbox {
+		display: flex;
+	}
+	&__avatar {
+		border-radius: 100%;
+		width: 40px;
+	}
+	&__user {
+
+	}
+	&__username {
+
+	}
+	&__userdate {
+
+	}
+	&__sharebox {
+		display: none;
+	}
+	&__sharetext {
+
+	}
+	&__icon {
+
+	}
+	&__button {
+		border: none;
+		border-radius: 100%;
+		width: 35px;
+		height: 35px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $lightblue;
+	}
+	&__shareicon {
+
 	}
 }
