@@ -1,0 +1,21 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=index.css.map */
