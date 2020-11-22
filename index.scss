@@ -8,12 +8,26 @@
 html {
 	box-sizing: border-box;
 }
-
+img {
+	display: block;
+}
 *, *:before, *:after {
 	box-sizing: inherit;
 }
 
+main {
+	background-color: hsl(210, 46%, 95%);
+	padding: 4rem 1rem;
+}
 .card {
 	border-radius: 10px;
 	overflow: hidden;
+	width: 100%;
+	&__banner {
+		width: 100%;
+	}
+	&__content {
+		padding: 2rem;
+		background-color: white;
+	}
 }

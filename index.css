@@ -9,13 +9,30 @@ html {
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+main {
+  background-color: #ecf2f8;
+  padding: 4rem 1rem;
 }
 
 .card {
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
+}
+.card__banner {
+  width: 100%;
+}
+.card__content {
+  padding: 2rem;
+  background-color: white;
 }
 
 /*# sourceMappingURL=index.css.map */
