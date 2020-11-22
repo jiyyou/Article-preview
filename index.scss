@@ -3,6 +3,12 @@ $darkblue: hsl(214, 17%, 51%);
 $blue: hsl(212, 23%, 69%);
 $lightblue: hsl(210, 46%, 95%);
 
+@mixin desktop {
+	@media (min-width: 1440px) {
+		@content;
+	}
+}
+
 * {
 	list-style-type: none;
 	text-decoration: none;
@@ -47,10 +53,24 @@ main {
 		background-color: white;
 		padding: 2rem;
 		display: flex;
+		position: relative;
 		justify-content: space-between;
+		&--active {
+			background-color: $darkestblue;
+			@include desktop {
+				background-color: white;
+			}
+		}
 	}
 	&__userbox {
 		display: flex;
+		width: 80%;
+		&--active {
+			display: none;
+			@include desktop {
+				display: flex !important;
+			}
+		}
 	}
 	&__avatar {
 		border-radius: 100%;
@@ -67,12 +87,20 @@ main {
 	}
 	&__sharebox {
 		display: none;
+		width: 80%;
+		&--active {
+			display: flex;
+			align-items: center;
+			@include desktop {
+				position: absolute;
+			}
+		}
 	}
 	&__sharetext {
-
+		color: $blue;
 	}
 	&__icon {
-
+		margin-left: 1rem;
 	}
 	&__button {
 		border: none;
@@ -83,6 +111,9 @@ main {
 		justify-content: center;
 		align-items: center;
 		background-color: $lightblue;
+		&--active {
+			background-color: $darkblue;
+		}
 	}
 	&__shareicon {
 
